@@ -1,3 +1,6 @@
+import java.sql.Array;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -43,7 +46,7 @@ public class Main {
         }
 ////////////////task 2.3 (Arbitrary)/////////////////////
         for (int i = 0; i < arbitrary.length; i++) {
-            if (i != arbitrary.length-1)
+            if (i != arbitrary.length - 1)
                 System.out.print(arbitrary[i] + ", ");
             else {
                 System.out.print(arbitrary[i] + ". ");
@@ -57,41 +60,41 @@ public class Main {
             System.out.println("Задача 3");
         }
 ////////////////task 3.1 (Integer)/////////////////////
-            for (int i = integer.length - 1; i < integer.length; i--) {
-                if (i >= integer[0])
-                    System.out.print(integer[i] + ", ");
-                else {
-                    System.out.print(integer[i] + ". ");
-                    break;
-                }
+        for (int i = integer.length - 1; i < integer.length; i--) {
+            if (i >= integer[0])
+                System.out.print(integer[i] + ", ");
+            else {
+                System.out.print(integer[i] + ". ");
+                break;
             }
-            {
-                System.out.println();
-            }
+        }
+        {
+            System.out.println();
+        }
 ////////////////task 3.2 (Fractional)/////////////////////
-            for (int i = fractional.length - 1; i < fractional.length; i--) {
-                if (i >= fractional.length - 2)
-                    System.out.print((double) fractional[i] + ", ");
-                else {
-                    System.out.print((double) fractional[i] + ". ");
-                    break;
-                }
+        for (int i = fractional.length - 1; i < fractional.length; i--) {
+            if (i >= fractional.length - 2)
+                System.out.print((double) fractional[i] + ", ");
+            else {
+                System.out.print((double) fractional[i] + ". ");
+                break;
             }
-            {
-                System.out.println();
-            }
+        }
+        {
+            System.out.println();
+        }
 ////////////////task 3.3 (Arbitrary)/////////////////////
-            for (int i = arbitrary.length - 1; i < arbitrary.length; i--) {
-                if (i != arbitrary[0])
-                    System.out.print(arbitrary[i] + ", ");
-                else {
-                    System.out.print(arbitrary[i] + ". ");
-                    break;
-                }
+        for (int i = arbitrary.length - 1; i < arbitrary.length; i--) {
+            if (i != arbitrary[0])
+                System.out.print(arbitrary[i] + ", ");
+            else {
+                System.out.print(arbitrary[i] + ". ");
+                break;
             }
-            {
-                System.out.println();
-            }
+        }
+        {
+            System.out.println();
+        }
 
         {
             System.out.println("Задача 4");
@@ -104,5 +107,15 @@ public class Main {
             if (numberInteger % 2 == 0)
                 System.out.print(numberInteger + " ");
         }
+        {
+            System.out.println();
+        }
+////////////////task 4.1(vol.1)(Integer)/////////////////////
+        for (int i = 0; i < integer.length; i++) {
+            if (integer[i] % 2 != 0) {
+                integer[i] += 1;
+            }
+        }
+        System.out.println(Arrays.toString(integer));
     }
 }
